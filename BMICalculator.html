@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>BIM Calculator</title>
+</head>
+
+<body>
+    <input id="weightInput"><br>
+    <input id="heightInput"><br>
+    <button onclick="BMI()">calculateBtn</button>
+
+    <script>
+        function BMI() {
+            let weightInput = document.getElementById('weightInput').value;
+            let heightInput = document.getElementById('heightInput').value;
+            let BMI = parseFloat(weightInput) / parseFloat(heightInput*heightInput);
+            document.write("BMI = ", BMI);
+        }
+    </script>
+</body>
+
+</html>
